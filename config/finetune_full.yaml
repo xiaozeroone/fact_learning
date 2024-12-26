@@ -1,0 +1,21 @@
+# data config
+dataset: xiaozeroone/Country-city-animals
+subset: Corpus_narrative
+max_token_length: 1024
+
+# model config
+model: meta-llama/Meta-Llama-3-8B
+
+# trainer config
+batch_size: 16
+accumulate_grad_batches: 1
+max_epochs: 5
+lr: 1.5e-5
+lr_scheduler: linear
+warmup_ratio: 0.1
+scheduler: linear
+gradient_clip_val: 1.0
+
+# global config
+save: save
+seed: 1
